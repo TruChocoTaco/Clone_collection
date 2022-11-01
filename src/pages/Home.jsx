@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom'
 const Home = () => {
     
     const webCards = [
-        {title: 'Netflix', image: images.cat, url: '/Netflix'},
-        {title: 'Discord', image: images.cat, url: '/Discord'},
-        {title: 'Hulu', image: images.cat, url: '/Hulu'},
+        {title: 'Netflix', image: images.cat, url: '/Netflix', status: "WIP 90%"},
+        {title: 'Discord', image: images.cat, url: '/Discord', status: "WIP 90%" },
+        {title: 'Hulu', image: images.cat, url: '/Hulu', status: "WIP 0%"},
 
     ]
   
@@ -23,6 +23,7 @@ const Home = () => {
                 <Link className="card" to={website.url}>
                     <img src={website.image} alt="" />
                     <h1>{website.title}</h1>
+                    <h3>{website.status}</h3>
                 </Link>
             ))}
         </div>
