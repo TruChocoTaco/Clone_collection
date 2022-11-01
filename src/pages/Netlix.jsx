@@ -16,8 +16,16 @@ const [toggle6, setToggle6] = useState(false)
     return (
     <section className='netflix'>
         <nav className='navbar'>
-            <div className="logo">Netflix</div>
-            <div className="dropdown"><BsGlobe />{lang}<AiFillCaretDown /></div>
+            <div className="logo">
+                <img src={images.netflixLogo} alt="" />
+            </div>
+            <div className="dropdown">
+                <p><BsGlobe /></p>
+                <select title='language'>
+                    <option value="english">English</option>
+                    <option value="spanish">Espanol</option>                    
+                </select>
+            </div>
 
             <button type='button' onClick='' className='btn'>Sign In</button>
         </nav>
@@ -40,49 +48,58 @@ const [toggle6, setToggle6] = useState(false)
         </div>
 
         <div className='section'>
-            <div className='left-text'>
-                <h1>Enjoy on your TV.</h1>
-                <h2>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h2>
-            </div>
-            <div className='image'>
-                <img src={images.tv} alt="" />
-            </div>
-        </div>
-        <div className='section'>
-            <div className='image'>
-                <img src={images.phone} alt="" />
-                <div className='phone-box'>
-                    <div className='box-img'>
-                        <img src={images.boxshot} alt="" />
-                    </div>
-                    <div className='text'>
-                        <div className='white-text'>Stanger Things</div>
-                        <div className='blue-text'>Downloading...</div>
-                    </div>
-                    <div className='gif'></div>
+            <div className='content'>
+                <div className='left-text'>
+                    <h1>Enjoy on your TV.</h1>
+                    <h2>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h2>
+                </div>
+                <div className='image'>
+                    <img src={images.tv} alt="" />
                 </div>
             </div>
-            <div className='right-text'>
-                <h1>Download your shows to watch offline.</h1>
-                <h2>Save your favorites easily and always have something to watch.</h2>
+        </div>
+        <div className='section'>
+            <div className="content right">
+                <div className='image'>
+                    <img src={images.phone} alt="" />
+                    <div className='phone-box'>
+                        <div className='box-img'>
+                            <img src={images.boxshot} alt="" />
+                        </div>
+                        <div className='text'>
+                            <div className='white-text'>Stanger Things</div>
+                            <div className='blue-text'>Downloading...</div>
+                        </div>
+                        <div className='gif'></div>
+                    </div>
+                </div>
+                <div className='right-text'>
+                    <h1>Download your shows to watch offline.</h1>
+                    <h2>Save your favorites easily and always have something to watch.</h2>
+                </div>
             </div>
         </div>
         <div className='section'>
-            <div className='left-text'>
-                <h1>Watch everywhere.</h1>
-                <h2>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</h2>
-            </div>
-            <div className='image'>
-                <img src={images.mac} alt="" />
+            <div className="content">    
+                <div className='left-text'>
+                    <h1>Watch everywhere.</h1>
+                    <h2>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</h2>
+                </div>
+                <div className='image'>
+                    <img src={images.mac} alt="" />
+                </div>
             </div>
         </div>
+
         <div className='section'>
-            <div className='image'>
-                <img src={images.kids} alt="" />
-            </div>
-            <div className='right-text'>
-                <h1>Create profiles for kids.</h1>
-                <h2>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</h2>
+            <div className="content right">            
+                <div className='image'>
+                    <img src={images.kids} alt="" />
+                </div>
+                <div className='right-text'>
+                    <h1>Create profiles for kids.</h1>
+                    <h2>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</h2>
+                </div>
             </div>
         </div>
 
@@ -161,7 +178,7 @@ const [toggle6, setToggle6] = useState(false)
 
         <div className="footer">
             <p>Questions? Call 1-844-504-2993</p>
-            <div className='blocks'>
+            <div className='blocks lg'>
                 <div className='block'>
                     <a href='#'>FAQ</a>
                     <a href='#'>Investor Relations</a>
@@ -188,11 +205,51 @@ const [toggle6, setToggle6] = useState(false)
                     <a href='#'>Legal Notices</a>
                 </div>
             </div>
+            <div className='blocks md'>
+                <div className='block'>
+                    <a href='#'>FAQ</a>
+                    <a href='#'>Investor Relations</a>
+                    <a href='#'>Ways to Watch</a>
+                    <a href='#'>Corporate Information</a>
+                    <a href='#'>Only on Netflix</a>
+                </div>
+                <div className='block'>
+                    <a href='#'>Help Center</a>
+                    <a href='#'>Jobs</a>
+                    <a href='#'>Terms of Use</a>
+                    <a href='#'>Contact Us</a>
+                </div>
+                <div className='block'>
+                    <a href='#'>Account</a>
+                    <a href='#'>Redeem Gift Cards</a>
+                    <a href='#'>Privacy</a>
+                    <a href='#'>Speed Test</a>
+                </div>
+
+            </div>
+            <div className='blocks sm'>
+                <div className='block'>
+                    <a href='#'>FAQ</a>
+                    <a href='#'>Investor Relations</a>
+                    <a href='#'>Ways to Watch</a>
+                    <a href='#'>Corporate Information</a>
+                    <a href='#'>Only on Netflix</a>
+                </div>
+                <div className='block'>
+                    <a href='#'>Help Center</a>
+                    <a href='#'>Jobs</a>
+                    <a href='#'>Terms of Use</a>
+                    <a href='#'>Contact Us</a>
+                </div>
+
+            </div>
             <div className="dropdown">
                 <div className='drop'>
                     <p><BsGlobe /></p>
-                    <span>{lang}</span>
-                    <p><AiFillCaretDown /></p>
+                    <select title='language'>
+                        <option value="english">English</option>
+                        <option value="spanish">Espanol</option>                    
+                    </select>
                 </div>
             </div>
         </div>

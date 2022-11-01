@@ -1,6 +1,5 @@
 import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { NavBar, Header, Footer, Section1, Section2, Section3 } from './components'
 import ErrorPage from './pages/ErrorPage';
 import Home from './pages/Home'
 import Hulu from './pages/Hulu';

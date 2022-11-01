@@ -38,9 +38,7 @@
             justify-content: space-between;
             align-items: center;
 
-            .logo {
 
-            }
 
             .menu {
                 ul {
@@ -129,7 +127,6 @@
                     
                     svg {
                         font-size: 24px;
-                        // align-self: flex-start;
                     }
 
                     &:hover {
@@ -230,13 +227,6 @@
             margin: auto 0;
         }
 
-        .left-img {
- 
-        }
-
-        .right-img {
-
-        }
 
         .text {
             width: 50%;

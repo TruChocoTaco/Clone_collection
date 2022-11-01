@@ -15,15 +15,19 @@ import dpic from '../assets/dpic.svg'
 import dvid from '../assets/dvid.svg'
 import sparkles from '../assets/sparkles.svg'
 import usa from '../assets/flag.png'
+import netflixLogo from '../assets/nlogo.jpg'
 
 
 export default {
     cat,
+
     netflix,
+    netflixLogo,
     tv,
     phone,
     mac,
     kids,
+
     boxshot,
     download,
     dhero1,
